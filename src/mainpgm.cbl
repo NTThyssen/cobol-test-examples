@@ -3,7 +3,7 @@
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       COPY customer.cpy.
+       COPY customer.
        PROCEDURE DIVISION.
            DISPLAY "Start MAINPGM".
            MOVE 10001 TO CUST-ID.
