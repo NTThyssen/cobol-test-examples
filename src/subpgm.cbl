@@ -1,0 +1,8 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. SUBPGM.
+       DATA DIVISION.
+       LINKAGE SECTION.
+       COPY customer.cpy.
+       PROCEDURE DIVISION USING CUSTOMER-RECORD.
+           DISPLAY "SUBPGM received customer " CUST-ID.
+           GOBACK.
