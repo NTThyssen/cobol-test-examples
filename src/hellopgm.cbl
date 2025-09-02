@@ -2,9 +2,9 @@
        PROGRAM-ID. HELLOPGM.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       COPY greet.cpy.
+       COPY greet.
        LINKAGE SECTION.
-       COPY customer.cpy.
+       COPY customer.
        PROCEDURE DIVISION USING CUSTOMER-RECORD.
            DISPLAY WS-MESSAGE.
            DISPLAY "Customer: " CUST-ID SPACE CUST-NAME.
