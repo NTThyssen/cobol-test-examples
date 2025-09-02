@@ -4,9 +4,9 @@
        WORKING-STORAGE SECTION.
        01  WS-USER        PIC X(10) VALUE "demo".
        01  WS-PASS        PIC X(10) VALUE "password".
-       COPY sqlca.cpy.
+       COPY sqlca.
        LINKAGE SECTION.
-       COPY customer.cpy.
+       COPY customer.
        PROCEDURE DIVISION USING CUSTOMER-RECORD.
            DISPLAY "DBPROG simulating database operation".
            EXEC SQL
