@@ -14,5 +14,11 @@
                   FROM CUSTOMERS
                  WHERE ID = :CUST-ID
            END-EXEC
+           EXEC SQL
+                SELECT BALANCE
+                  INTO :CUST-BALANCE
+                  FROM PRODUCTS
+                 WHERE ID = :CUST-ID
+           END-EXEC
            CALL "SUBPGM" USING CUSTOMER-RECORD.
            GOBACK.
